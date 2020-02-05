@@ -29,59 +29,34 @@ class QebHwtThamosAdviseInput(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'github_event_type': 'str',
         'github_check_run_id': 'int',
+        'github_event_type': 'str',
         'github_installation_id': 'int',
         'origin': 'str',
         'revision': 'str'
     }
 
     attribute_map = {
-        'github_event_type': 'github_event_type',
         'github_check_run_id': 'github_check_run_id',
+        'github_event_type': 'github_event_type',
         'github_installation_id': 'github_installation_id',
         'origin': 'origin',
         'revision': 'revision'
     }
 
-    def __init__(self, github_event_type=None, github_check_run_id=None, github_installation_id=None, origin=None, revision=None):  # noqa: E501
+    def __init__(self, github_check_run_id=None, github_event_type=None, github_installation_id=None, origin=None, revision=None):  # noqa: E501
         """QebHwtThamosAdviseInput - a model defined in Swagger"""  # noqa: E501
-        self._github_event_type = None
         self._github_check_run_id = None
+        self._github_event_type = None
         self._github_installation_id = None
         self._origin = None
         self._revision = None
         self.discriminator = None
-        self.github_event_type = github_event_type
         self.github_check_run_id = github_check_run_id
+        self.github_event_type = github_event_type
         self.github_installation_id = github_installation_id
         self.origin = origin
         self.revision = revision
-
-    @property
-    def github_event_type(self):
-        """Gets the github_event_type of this QebHwtThamosAdviseInput.  # noqa: E501
-
-        Type of GitHub event.  # noqa: E501
-
-        :return: The github_event_type of this QebHwtThamosAdviseInput.  # noqa: E501
-        :rtype: str
-        """
-        return self._github_event_type
-
-    @github_event_type.setter
-    def github_event_type(self, github_event_type):
-        """Sets the github_event_type of this QebHwtThamosAdviseInput.
-
-        Type of GitHub event.  # noqa: E501
-
-        :param github_event_type: The github_event_type of this QebHwtThamosAdviseInput.  # noqa: E501
-        :type: str
-        """
-        if github_event_type is None:
-            raise ValueError("Invalid value for `github_event_type`, must not be `None`")  # noqa: E501
-
-        self._github_event_type = github_event_type
 
     @property
     def github_check_run_id(self):
@@ -107,6 +82,31 @@ class QebHwtThamosAdviseInput(object):
             raise ValueError("Invalid value for `github_check_run_id`, must not be `None`")  # noqa: E501
 
         self._github_check_run_id = github_check_run_id
+
+    @property
+    def github_event_type(self):
+        """Gets the github_event_type of this QebHwtThamosAdviseInput.  # noqa: E501
+
+        Type of GitHub event.  # noqa: E501
+
+        :return: The github_event_type of this QebHwtThamosAdviseInput.  # noqa: E501
+        :rtype: str
+        """
+        return self._github_event_type
+
+    @github_event_type.setter
+    def github_event_type(self, github_event_type):
+        """Sets the github_event_type of this QebHwtThamosAdviseInput.
+
+        Type of GitHub event.  # noqa: E501
+
+        :param github_event_type: The github_event_type of this QebHwtThamosAdviseInput.  # noqa: E501
+        :type: str
+        """
+        if github_event_type is None:
+            raise ValueError("Invalid value for `github_event_type`, must not be `None`")  # noqa: E501
+
+        self._github_event_type = github_event_type
 
     @property
     def github_installation_id(self):

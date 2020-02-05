@@ -29,7 +29,7 @@ class InlineResponse2002(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'parameters': 'InlineResponse2001Parameters',
+        'parameters': 'InlineResponse200Parameters',
         'software_environments': 'list[InlineResponse2002SoftwareEnvironments]'
     }
 
@@ -52,7 +52,7 @@ class InlineResponse2002(object):
 
 
         :return: The parameters of this InlineResponse2002.  # noqa: E501
-        :rtype: InlineResponse2001Parameters
+        :rtype: InlineResponse200Parameters
         """
         return self._parameters
 
@@ -62,7 +62,7 @@ class InlineResponse2002(object):
 
 
         :param parameters: The parameters of this InlineResponse2002.  # noqa: E501
-        :type: InlineResponse2001Parameters
+        :type: InlineResponse200Parameters
         """
         if parameters is None:
             raise ValueError("Invalid value for `parameters`, must not be `None`")  # noqa: E501
